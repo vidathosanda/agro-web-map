@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  padding: 10px;
+  text-align: center;
+  background-color: #484e48;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 22px;
+  color: #69ac62;
+  margin: 15px 0;
+}
+
+
+#map {
+  height: 90vh;
+  width: 100%;
+}
+
+.legend {
+  background: rgb(145, 195, 162);
+  padding: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  border: 2px solid #050404;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.legend i {
+  width: 14px;
+  height: 14px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.8;
+  background-color: #000; /* Default/fallback color */
+}
+
+.leaflet-popup-content {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.leaflet-popup-content select,
+.leaflet-popup-content input,
+.leaflet-popup-content textarea,
+.leaflet-popup-content button {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.leaflet-popup-content button {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.leaflet-popup-content button:hover {
+  background-color: #21867a;
+}
