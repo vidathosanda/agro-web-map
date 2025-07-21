@@ -10,8 +10,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Load GeoJSON
-fetch('data/Landuse_geoJson.geojson_4326.geojson')
-  .then(res => res.json())
+fetch("https://drive.google.com/uc?export=download&id=1IRlFt0wODA0UvNNJug7NrJOwW4P1PZS7")
+  .then(res => res.text())
+  .then(text => JSON.parse(text))
   .then(data => {
     geoLayer = L.geoJSON(data, {
       style: function(feature) {
